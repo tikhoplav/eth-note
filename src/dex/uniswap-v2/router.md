@@ -35,7 +35,7 @@ According to contract code there are 9 function that can be used to perform a
 swap (selector, link to detail page - link to contract code):
 
 - [`0x38ed1739`](./router/swap_exact_tokens_for_tokens.md) - [`swapExactTokensForTokens`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L224-L237);
-- [`0x8803dbee`]() - [`swapTokensForExactTokens`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L238-L251);
+- [`0x8803dbee`](./router/swap_tokens_for_exact_tokens.md) - [`swapTokensForExactTokens`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L238-L251);
 - [`0x`]() - [`swapExactETHForTokens`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L252-L266);
 - [`0x`]() - [`swapTokensForExactETH`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L267-L283);
 - [`0x`]() - [`swapExactTokensForETH`](https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol#L284-L300);

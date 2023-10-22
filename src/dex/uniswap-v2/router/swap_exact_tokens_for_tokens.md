@@ -8,14 +8,14 @@
 
 <br>
 
-```
+```Solidity
 function swapExactTokensForTokens(
   uint amountIn,
   uint amountOutMin,
   address[] calldata path,
   address to,
   uint deadline
-) external returns (uint[] memory amounts);
+) external returns (uint[] memory amounts)
 ```
 
 According to the documentation, this function takes the exact amount of tokens,
@@ -98,12 +98,14 @@ using the rule `2 * i - 2`:
 ```JavaScript
 function parseSwapExactTokenForToken(callData) {
     return {
-        amountIn: BigInt(`0x${txData.slice(10, 74)}`),
-        amountOutMin: BigInt(`0x${txData.slice(74, 138)}`),
-        tokens: txData.slice(394).match(/.{64}/g).map(a => a.slice(-40)),
+        amountIn: BigInt(`0x${callData.slice(10, 74)}`),
+        amountOutMin: BigInt(`0x${callData.slice(74, 138)}`),
+        tokens: callData.slice(394).match(/.{64}/g).map(a => a.slice(-40)),
     }
 }
 ```
+
+> TODO:: Add the example of resolving pair addresses using `path` from callData
 
 <br>
 
@@ -129,6 +131,12 @@ group by pair
 order by c desc
 limit 12
 ```
+
+<br>
+
+## Parsing the response
+
+> TODO:: add example of a response and it's parsing
 
 <br>
 <br>

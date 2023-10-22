@@ -1,0 +1,6 @@
+[book]
+authors = ["Vitaly Tikhoplav"]
+language = "en"
+multilingual = false
+src = "src"
+title = "ETH note"

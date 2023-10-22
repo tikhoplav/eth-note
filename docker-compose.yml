@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    image: tikhoplav/eth-note:dev
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./cache:/usr/local/cargo/registry
+    ports:
+      - 3000:3000
+    command: ['mdbook', 'serve', '--hostname', '0.0.0.0']
